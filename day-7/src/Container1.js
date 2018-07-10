@@ -7,7 +7,7 @@ import Content from './Content2'
 // An async request
 const data = require('./data.json')
 
-const fetchEvents = () => Promise.resolve(data).then(json => json.slice(0, 4))
+const fetchEvents = async () => data.slice(0, 4)
 
 class Container extends React.Component {
 	constructor(props) {
